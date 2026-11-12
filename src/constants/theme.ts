@@ -9,22 +9,34 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#FFFFFF',
+    background: '#0B0B0F',
+    backgroundElement: '#14141B',
+    backgroundSelected: '#20202B',
+    textSecondary: '#A0A0B5',
+    accent: '#E6A4B4',
+    accentGold: '#D4AF37',
+    border: '#242432',
+    card: '#16161F',
+    cardElevated: '#1D1D28',
+    glow: 'rgba(230, 164, 180, 0.25)',
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: '#FFFFFF',
+    background: '#08080C',
+    backgroundElement: '#121218',
+    backgroundSelected: '#1C1C26',
+    textSecondary: '#9A9AA8',
+    accent: '#E6A4B4',
+    accentGold: '#D4AF37',
+    border: '#22222E',
+    card: '#14141C',
+    cardElevated: '#1B1B25',
+    glow: 'rgba(230, 164, 180, 0.25)',
   },
 } as const;
 
-export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
+export type ThemeColor = keyof typeof Colors.dark;
 
 export const Fonts = Platform.select({
   ios: {
