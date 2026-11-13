@@ -168,7 +168,10 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 16,
     paddingVertical: 24,
-    backgroundColor: '#08080C',
+    backgroundColor: '#07090E',
+    maxWidth: 1200,
+    width: '100%',
+    alignSelf: 'center',
   },
   header: {
     alignItems: 'center',
@@ -178,9 +181,11 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   subtitleScript: {
-    fontSize: 14,
-    color: '#E6A4B4',
-    fontStyle: 'italic',
+    fontSize: 13,
+    color: '#38BDF8',
+    fontWeight: '700',
+    letterSpacing: 0.8,
+    textTransform: 'uppercase',
   },
   title: {
     fontSize: 23,
@@ -191,7 +196,7 @@ const styles = StyleSheet.create({
   },
   caption: {
     fontSize: 13,
-    color: '#8E8EA2',
+    color: '#94A3B8',
     textAlign: 'center',
     maxWidth: 580,
     lineHeight: 19,
@@ -204,11 +209,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   visualCard: {
-    backgroundColor: '#13131C',
+    backgroundColor: '#0A1325',
     borderRadius: 20,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: '#242436',
+    borderColor: '#1C355F',
   },
   visualCardHalf: {
     flex: 1,
@@ -216,7 +221,7 @@ const styles = StyleSheet.create({
   imageWrapper: {
     position: 'relative',
     height: 220,
-    backgroundColor: '#1E1E2A',
+    backgroundColor: '#070E1C',
   },
   showcaseImage: {
     width: '100%',
@@ -229,12 +234,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 5,
-    backgroundColor: 'rgba(10, 10, 14, 0.85)',
+    backgroundColor: 'rgba(6, 12, 24, 0.9)',
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: 'rgba(230, 164, 180, 0.4)',
+    borderColor: 'rgba(56, 189, 248, 0.4)',
   },
   overlayBadgeText: {
     fontSize: 11,
@@ -252,18 +257,18 @@ const styles = StyleSheet.create({
   },
   cardDesc: {
     fontSize: 12.5,
-    color: '#9E9EB0',
+    color: '#94A3B8',
     lineHeight: 18,
   },
   metricsBox: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#12121A',
+    backgroundColor: '#0B172E',
     borderRadius: 16,
     paddingVertical: 18,
     borderWidth: 1,
-    borderColor: '#242436',
+    borderColor: '#1E3A6A',
     marginBottom: 24,
   },
   metricItem: {
@@ -272,17 +277,17 @@ const styles = StyleSheet.create({
   metricNumber: {
     fontSize: 22,
     fontWeight: '900',
-    color: '#E6A4B4',
+    color: '#38BDF8',
     marginBottom: 2,
   },
   metricLabel: {
     fontSize: 11,
-    color: '#8A8A9E',
+    color: '#94A3B8',
   },
   metricDivider: {
     width: 1,
     height: 32,
-    backgroundColor: '#26263A',
+    backgroundColor: '#1E3A6A',
   },
   testimonialContainer: {
     marginBottom: 24,
@@ -297,11 +302,11 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   testimonialCard: {
-    backgroundColor: '#13131C',
+    backgroundColor: '#0A1325',
     borderRadius: 16,
     padding: 16,
     borderWidth: 1,
-    borderColor: '#222232',
+    borderColor: '#1C355F',
   },
   starsRow: {
     flexDirection: 'row',
@@ -310,7 +315,7 @@ const styles = StyleSheet.create({
   },
   commentText: {
     fontSize: 12.5,
-    color: '#D4D4E6',
+    color: '#CBD5E1',
     lineHeight: 18,
     fontStyle: 'italic',
     marginBottom: 10,
@@ -330,11 +335,11 @@ const styles = StyleSheet.create({
     color: '#D4AF37',
   },
   contactCard: {
-    backgroundColor: '#161622',
+    backgroundColor: '#0B172E',
     borderRadius: 18,
     padding: 16,
     borderWidth: 1,
-    borderColor: '#2A2A3E',
+    borderColor: '#1E3A6A',
   },
   contactRow: {
     flexDirection: 'row',
@@ -345,11 +350,11 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#261B28',
+    backgroundColor: '#102244',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#E6A4B4',
+    borderColor: '#38BDF8',
   },
   contactInfo: {
     flex: 1,
@@ -362,7 +367,7 @@ const styles = StyleSheet.create({
   },
   contactSub: {
     fontSize: 12,
-    color: '#A0A0B5',
+    color: '#94A3B8',
     lineHeight: 17,
     marginBottom: 2,
   },
@@ -380,16 +385,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 6,
-    backgroundColor: '#1A1A28',
+    backgroundColor: '#070F1E',
     paddingVertical: 10,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: 'rgba(212, 175, 55, 0.4)',
+    borderColor: '#1E3A6A',
   },
   mapButtonText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#F4CA64',
+    color: '#38BDF8',
   },
   reserveButton: {
     flex: 1,
@@ -397,14 +402,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 6,
-    backgroundColor: '#E6A4B4',
+    backgroundColor: '#38BDF8',
     paddingVertical: 10,
     borderRadius: 12,
   },
   reserveButtonText: {
     fontSize: 12,
-    fontWeight: '700',
-    color: '#0A0A0E',
+    fontWeight: '800',
+    color: '#060E1C',
   },
   pressed: {
     opacity: 0.8,

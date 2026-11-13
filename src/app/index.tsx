@@ -67,35 +67,37 @@ export default function HomeScreen() {
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContainer}>
-        {/* Advertisement Strip */}
-        <AdvertisementStrip onPress={() => setBookingVisible(true)} />
+        <View style={styles.contentConstraint}>
+          {/* Advertisement Strip */}
+          <AdvertisementStrip onPress={() => setBookingVisible(true)} />
 
-        {/* Hero Advertisement Carousel */}
-        <HeroAdvertBanner
-          onClaimOffer={handleClaimOffer}
-          onExploreServices={() => {}}
-        />
+          {/* Hero Advertisement Carousel */}
+          <HeroAdvertBanner
+            onClaimOffer={handleClaimOffer}
+            onExploreServices={() => {}}
+          />
 
-        {/* Services & Treatment Packages Grid */}
-        <ServicesSection onSelectService={handleSelectService} />
+          {/* Services & Treatment Packages Grid */}
+          <ServicesSection onSelectService={handleSelectService} />
 
-        {/* Cosmetics & Step-by-Step Usage Routine Section */}
-        <CosmeticsSection />
+          {/* Cosmetics & Step-by-Step Usage Routine Section */}
+          <CosmeticsSection />
 
-        {/* Salon Showcase & Credentials with User's Uploaded Images */}
-        <AboutSalonSection onOpenBooking={() => setBookingVisible(true)} />
+          {/* Salon Showcase & Credentials with User's Uploaded Images */}
+          <AboutSalonSection onOpenBooking={() => setBookingVisible(true)} />
 
-        {/* Footer Brand Note */}
-        <View style={styles.footerNote}>
-          <ThemedText style={styles.footerBrand}>
-            {SALON_INFO.name}
-          </ThemedText>
-          <ThemedText style={styles.footerSub}>
-            {SALON_INFO.tagline} • All rights reserved
-          </ThemedText>
-          <ThemedText style={styles.footerPolicy}>
-            Cruelty-Free • 100% Organic Extracts • Certified Artists
-          </ThemedText>
+          {/* Footer Brand Note */}
+          <View style={styles.footerNote}>
+            <ThemedText style={styles.footerBrand}>
+              {SALON_INFO.name}
+            </ThemedText>
+            <ThemedText style={styles.footerSub}>
+              {SALON_INFO.tagline} • All rights reserved
+            </ThemedText>
+            <ThemedText style={styles.footerPolicy}>
+              Cruelty-Free • 100% Organic Extracts • Certified Artists
+            </ThemedText>
+          </View>
         </View>
       </ScrollView>
 
@@ -104,7 +106,7 @@ export default function HomeScreen() {
         <Pressable
           onPress={handleCall}
           style={({ pressed }) => [styles.stickyCallBtn, pressed && styles.pressed]}>
-          <Ionicons name="call" size={16} color="#FFFFFF" />
+          <Ionicons name="call" size={16} color="#38BDF8" />
           <ThemedText style={styles.stickyCallText}>Call Now</ThemedText>
         </Pressable>
 
@@ -118,7 +120,7 @@ export default function HomeScreen() {
         <Pressable
           onPress={() => setBookingVisible(true)}
           style={({ pressed }) => [styles.stickyBookBtn, pressed && styles.pressed]}>
-          <Ionicons name="calendar" size={15} color="#0A0A0E" />
+          <Ionicons name="calendar" size={15} color="#060E1C" />
           <ThemedText style={styles.stickyBookText}>Book VIP</ThemedText>
         </Pressable>
       </View>
@@ -153,19 +155,24 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#08080C',
+    backgroundColor: '#07080D',
   },
   scrollContainer: {
     paddingBottom: 110,
-    backgroundColor: '#08080C',
+    backgroundColor: '#07080D',
+  },
+  contentConstraint: {
+    width: '100%',
+    maxWidth: 1200,
+    alignSelf: 'center',
   },
   footerNote: {
     paddingVertical: 24,
     paddingHorizontal: 16,
     alignItems: 'center',
     borderTopWidth: 1,
-    borderTopColor: '#1A1A26',
-    backgroundColor: '#08080C',
+    borderTopColor: '#12203B',
+    backgroundColor: '#07080D',
   },
   footerBrand: {
     fontSize: 16,
@@ -175,7 +182,7 @@ const styles = StyleSheet.create({
   },
   footerSub: {
     fontSize: 12,
-    color: '#8A8A9C',
+    color: '#8A9BB8',
     marginBottom: 4,
   },
   footerPolicy: {
@@ -189,14 +196,14 @@ const styles = StyleSheet.create({
     right: 12,
     flexDirection: 'row',
     gap: 8,
-    backgroundColor: 'rgba(18, 18, 26, 0.95)',
+    backgroundColor: 'rgba(10, 19, 37, 0.96)',
     padding: 8,
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: '#2D2D42',
-    shadowColor: '#000000',
+    borderColor: '#1E3A6A',
+    shadowColor: '#1E40AF',
     shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.6,
+    shadowOpacity: 0.4,
     shadowRadius: 12,
     elevation: 8,
     alignItems: 'center',
@@ -209,17 +216,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 5,
-    backgroundColor: '#1E1E2C',
+    backgroundColor: '#0F1E3A',
     paddingVertical: 10,
     paddingHorizontal: 12,
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: '#32324A',
+    borderColor: '#1E3A6A',
   },
   stickyCallText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: '#38BDF8',
   },
   stickyWaBtn: {
     flex: 1,
@@ -242,17 +249,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 5,
-    backgroundColor: '#E6A4B4',
+    backgroundColor: '#38BDF8',
     paddingVertical: 10,
     borderRadius: 14,
   },
   stickyBookText: {
     fontSize: 12.5,
     fontWeight: '800',
-    color: '#0A0A0E',
+    color: '#060E1C',
   },
   pressed: {
-    opacity: 0.8,
+    opacity: 0.85,
     transform: [{ scale: 0.98 }],
   },
 });

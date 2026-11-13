@@ -14,7 +14,7 @@ export const AdvertisementStrip: React.FC<AdvertisementStripProps> = ({ onPress 
       style={({ pressed }) => [styles.strip, pressed && styles.pressed]}>
       <View style={styles.content}>
         <View style={styles.flashBadge}>
-          <Ionicons name="flash" size={11} color="#0A0A0E" />
+          <Ionicons name="flash" size={11} color="#060E1C" />
           <ThemedText style={styles.flashText}>OFFER</ThemedText>
         </View>
         <ThemedText style={styles.messageText} numberOfLines={1}>
@@ -24,7 +24,7 @@ export const AdvertisementStrip: React.FC<AdvertisementStripProps> = ({ onPress 
       </View>
       <View style={styles.arrowRow}>
         <ThemedText style={styles.claimNow}>Claim</ThemedText>
-        <Ionicons name="chevron-forward" size={13} color="#F3A6B2" />
+        <Ionicons name="chevron-forward" size={13} color="#38BDF8" />
       </View>
     </Pressable>
   );
@@ -32,8 +32,8 @@ export const AdvertisementStrip: React.FC<AdvertisementStripProps> = ({ onPress 
 
 const styles = StyleSheet.create({
   strip: {
-    backgroundColor: '#1C1520',
-    borderColor: '#3D2534',
+    backgroundColor: '#0A1325',
+    borderColor: '#1C355F',
     borderTopWidth: 1,
     borderBottomWidth: 1,
     paddingHorizontal: 16,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 2,
-    backgroundColor: '#F3A6B2',
+    backgroundColor: '#38BDF8',
     paddingHorizontal: 6,
     paddingVertical: 2,
     borderRadius: 4,
@@ -61,11 +61,11 @@ const styles = StyleSheet.create({
   flashText: {
     fontSize: 9,
     fontWeight: '800',
-    color: '#0A0A0E',
+    color: '#060E1C',
   },
   messageText: {
     fontSize: 12,
-    color: '#E8D8E0',
+    color: '#CBD5E1',
     flex: 1,
   },
   codeText: {
@@ -80,9 +80,9 @@ const styles = StyleSheet.create({
   claimNow: {
     fontSize: 11,
     fontWeight: '700',
-    color: '#F3A6B2',
+    color: '#38BDF8',
   },
   pressed: {
-    opacity: 0.8,
+    opacity: 0.85,
   },
 });

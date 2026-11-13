@@ -53,14 +53,14 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
           onPress={handleCall}
           style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
           accessibilityLabel="Call Salon">
-          <Ionicons name="call-outline" size={17} color="#F3A6B2" />
+          <Ionicons name="call-outline" size={17} color="#38BDF8" />
         </Pressable>
 
         {/* Quick Booking */}
         <Pressable
           onPress={onOpenBooking}
           style={({ pressed }) => [styles.bookButton, pressed && styles.pressed]}>
-          <Ionicons name="calendar-outline" size={14} color="#0A0A0E" />
+          <Ionicons name="calendar-outline" size={14} color="#060E1C" />
           <ThemedText style={styles.bookButtonText}>Book Now</ThemedText>
         </Pressable>
 
@@ -75,7 +75,7 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
           <Ionicons
             name={isLoggedIn ? 'person-circle' : 'finger-print-outline'}
             size={16}
-            color={isLoggedIn ? '#D4AF37' : '#F3A6B2'}
+            color={isLoggedIn ? '#D4AF37' : '#38BDF8'}
           />
           <ThemedText style={[styles.loginText, isLoggedIn && styles.loggedInText]}>
             {isLoggedIn ? userName : 'Expo VIP'}
@@ -93,9 +93,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 12,
-    backgroundColor: 'rgba(10, 10, 14, 0.96)',
+    backgroundColor: 'rgba(7, 12, 24, 0.96)',
     borderBottomWidth: 1,
-    borderBottomColor: '#1E1E2A',
+    borderBottomColor: '#12203B',
     zIndex: 100,
   },
   brandContainer: {
@@ -109,10 +109,10 @@ const styles = StyleSheet.create({
     height: 44,
     borderRadius: 22,
     padding: 2,
-    backgroundColor: '#1E1824',
+    backgroundColor: '#0F1E3A',
     borderWidth: 1.5,
-    borderColor: '#E6A4B4',
-    shadowColor: '#E6A4B4',
+    borderColor: '#38BDF8',
+    shadowColor: '#38BDF8',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.35,
     shadowRadius: 6,
@@ -146,8 +146,8 @@ const styles = StyleSheet.create({
   },
   brandSubtitle: {
     fontSize: 11,
-    color: '#D4AF37',
-    fontWeight: '500',
+    color: '#38BDF8',
+    fontWeight: '600',
     letterSpacing: 0.5,
   },
   actionsContainer: {
@@ -159,9 +159,9 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: '#161622',
+    backgroundColor: '#0B172E',
     borderWidth: 1,
-    borderColor: '#29293C',
+    borderColor: '#1E3A6A',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -169,34 +169,34 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 4,
-    backgroundColor: '#E6A4B4',
+    backgroundColor: '#38BDF8',
     paddingHorizontal: 12,
     paddingVertical: 8,
     borderRadius: 18,
   },
   bookButtonText: {
-    color: '#0A0A0E',
+    color: '#060E1C',
     fontSize: 12,
-    fontWeight: '700',
+    fontWeight: '800',
   },
   loginBadge: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 5,
-    backgroundColor: '#171724',
+    backgroundColor: '#0B172E',
     paddingHorizontal: 10,
     paddingVertical: 7,
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: '#342636',
+    borderColor: '#1E3A6A',
   },
   loggedInBadge: {
     borderColor: 'rgba(212, 175, 55, 0.5)',
-    backgroundColor: '#1F1B14',
+    backgroundColor: '#1A1810',
   },
   loginText: {
     fontSize: 12,
-    color: '#F3A6B2',
+    color: '#7DD3FC',
     fontWeight: '600',
   },
   loggedInText: {

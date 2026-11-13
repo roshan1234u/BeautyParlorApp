@@ -42,7 +42,7 @@ export function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps
         ]}>
         <ThemedText
           type="smallBold"
-          style={isFocused ? { color: '#F3A6B2' } : { color: '#9E9EB2' }}>
+          style={isFocused ? { color: '#38BDF8' } : { color: '#94A3B8' }}>
           {children}
         </ThemedText>
       </ThemedView>
@@ -105,9 +105,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     gap: Spacing.two,
     maxWidth: 900,
-    backgroundColor: 'rgba(18, 18, 24, 0.94)',
+    backgroundColor: 'rgba(10, 19, 37, 0.95)',
     borderWidth: 1,
-    borderColor: '#262636',
+    borderColor: '#1E3A6A',
   },
   brandRow: {
     flexDirection: 'row',
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     height: 36,
     borderRadius: 18,
     borderWidth: 1.5,
-    borderColor: '#E6A4B4',
+    borderColor: '#38BDF8',
   },
   brandTitle: {
     color: '#FFFFFF',
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   brandSub: {
-    color: '#D4AF37',
+    color: '#38BDF8',
     fontSize: 11,
   },
   tabButtonsGroup: {
@@ -138,12 +138,12 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 14,
-    backgroundColor: '#171722',
+    backgroundColor: '#070E1C',
   },
   tabButtonActive: {
-    borderColor: '#E6A4B4',
+    borderColor: '#38BDF8',
     borderWidth: 1,
-    backgroundColor: '#261C26',
+    backgroundColor: '#112247',
   },
   badgePill: {
     backgroundColor: 'rgba(212, 175, 55, 0.15)',
